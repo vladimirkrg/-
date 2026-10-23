@@ -1,0 +1,260 @@
+/* убираем отступы, задаем шрифт, padding и border приравниваем к ширине  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Делаем header поверх фона */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 0;
+}
+
+/* навигация */
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* текст навигации */
+header a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 20px;
+}
+
+/* изменение цвета при наведении */
+header a:hover {
+    color: white;
+}
+
+/* Секция с фоном */
+.face {
+    background: url(../image/backgroung-face.png) center / cover no-repeat;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* заголовоки */
+h1 {
+    color: white;
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+/* Заголовки секций */
+h2 {
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(102, 0, 255, 0.5);
+}
+
+/* описание */
+.description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    color: #ddd;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* задний фон */
+.background {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0a0a0a 100%);
+    text-align: center;
+}
+
+/* О НАС */
+/* описание */
+#about_us p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #ddd;
+    font-family: 'Arial', sans-serif;
+    border: 2px dashed rgba(102, 0, 255, 0.4);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+/* МУЗЫКАНТЫ */
+.cards_grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* карточка */
+.cards_misicans {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    width: 280px;
+    padding: 25px 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* тень при наведении */
+.cards_misicans:hover {
+    border: 1px solid #6600ff;
+    box-shadow: 0px 0px 10px 10px rgba(102, 0, 255, 0.25);
+}
+
+/* фото */
+.cards_misicans img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6600ff;
+    margin: 15px 0 15px 0;
+}
+/* Тень для псевдонима */
+.cards_misicans h3 {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+/* Размер текста */
+.cards_misicans h4 {
+    font-size: 18px;
+}
+/* Описание */
+.cards_misicans p {
+    font-size: 15px;
+    text-align: left;
+    color: #999;
+}
+
+/* ТОП-ЧАРТЫ */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* карточка */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+/* Эфект при наведении */
+.card:hover {
+    border: 1px solid #6600ff;
+    box-shadow: 0px 0px 5px 5px rgba(102, 0, 255, 0.25);
+}
+
+/* название трека */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 4px;
+}
+
+/* исполнитель */
+.artist {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* описание */
+.desc {
+    font-size: 11px;
+    color: #888;
+}
+
+/* КОНТАКТЫ */
+.contacts_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/* Карточка */
+.contacts_card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+/* Эффект при наведении */
+.contacts_card:hover {
+    border: 1px solid #6600ff;
+    box-shadow: 0px 0px 10px 10px rgba(102, 0, 255, 0.25);
+}
+/* Заголовок */
+.contacts_label {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Контакт */
+.contacts_value {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 8px 0;
+}
+/* Описание */
+.contacts_desc {
+    font-size: 11px;
+    color: #888;
+}
+
+/* ПОДВАЛ */
+.footer {
+    background: #0a0a0a;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid rgba(102, 0, 255, 0.3);
+}
+/* Текст */
+.footer p {
+    color: #666;
+    font-size: 15px;
+}
+/* Ссылка */
+.footer a {
+    color: #888;
+    text-decoration: none;
+}
+/* Эффект при наведении на ссылку */
+.footer a:hover {
+    color: #6600ff;
+}
+
+@media (max-width: 768px) {
+  .menu ul { flex-wrap: wrap; gap: 15px; justify-content: center; }
+  h1 { font-size: 32px; letter-spacing: 2px; }
+  h2 { font-size: 28px; }
+  .face { min-height: 400px; }
+  .grid { grid-template-columns: 1fr; }
+  .contacts_grid { grid-template-columns: 1fr; }
+  .cards_misicans { width: 100%; max-width: 320px; }
+  header a { font-size: 14px; }
+}
